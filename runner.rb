@@ -2,14 +2,18 @@ require 'bundler'
 Bundler.setup(:default)
 require 'mailcannon'
 
+redis_url = ENV['REDIS_URL'] || 'redis://localhost:6379'
+MAILCANNON_ENV = ENV['MAILCANNON_ENV'] || 'development'
+Mongoid.load!("config/mongoid.yml", MAILCANNON_ENV)
+
 # If your client is single-threaded, we just need a single connection in our Redis connection pool
 Sidekiq.configure_client do |config|
-  config.redis = { :namespace => 'mailcannon', :size => 1, :url => 'redis://localhost:16379' }
+  config.redis = { :namespace => 'mailcannon', :size => 1, :url => redis_url }
 end
 
 # Sidekiq server is multi-threaded so our Redis connection pool size defaults to concurrency (-c)
 Sidekiq.configure_server do |config|
-  config.redis = { :namespace => 'mailcannon', :url => 'redis://localhost:16379' }
+  config.redis = { :namespace => 'mailcannon', :url => redis_url }
 end
 
 # Start up sidekiq via
