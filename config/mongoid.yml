@@ -22,15 +22,3 @@ development:
       # of host:port pairs. (required)
       hosts:
         - localhost:17017
-test:
-  sessions:
-    default:
-      database: mailcannon_test
-      hosts:
-        - localhost:17017
-      options:
-        consistency: :strong
-        # In the test environment we lower the retries and retry interval to
-        # low amounts for fast failures.
-        max_retries: 1
-        retry_interval: 0

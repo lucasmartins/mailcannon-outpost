@@ -13,7 +13,7 @@ Refer to the main gem for more details: [MailCannon](https://github.com/lucasmar
 You should be able to clone/fork this repo and run the wrapper like this:
 
 ```bash
-  $ bundle exec sidekiq -r ./runner.rb
+  $ be sidekiq -r ./runner.rb --config=config/sidekiq.yml -v
 ```
 
 You can access a console with MailCannon environment loaded like this:
