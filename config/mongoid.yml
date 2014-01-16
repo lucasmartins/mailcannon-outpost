@@ -3,13 +3,12 @@ production:
   sessions:
     # Defines the default session. (required)
     default:
-      # Defines the name of the default database that Mongoid can connect to.
-      # (required).
+      uri: <%= ENV['MONGODB_URL'] %>
+      options:
+        safe: true
+        skip_version_check: true
+      # the database should be the same as your app using the mailcannon gem.
       database: mailcannon_production
-      # Provides the hosts the default session can connect to. Must be an array
-      # of host:port pairs. (required)
-      hosts:
-        - localhost:17017
 development:
   # Configure available database sessions. (required)
   sessions:

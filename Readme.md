@@ -21,6 +21,8 @@ You can access a console with MailCannon environment loaded like this:
   $ irb -r ./runner.rb
 ```
 
+MailCannon Outpost will use your `MONGOBD_URL`, and you should check `config/mongoid.yml` file.
+
 Use
 ===
 
