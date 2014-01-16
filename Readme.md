@@ -30,6 +30,11 @@ You can access a console with MailCannon environment loaded like this:
   $ irb -r ./runner.rb
 ```
 
+or like this on Heroku:
+```bash
+  $ heroku run 'bundle exec irb -r ./runner.rb'
+```
+
 MailCannon Outpost will use your `MONGOBD_URL`, take a look at your `config/mongoid.yml` file.
 
 Use
