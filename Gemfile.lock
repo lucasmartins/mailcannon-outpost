@@ -1,3 +1,15 @@
+GIT
+  remote: git://github.com/lucasmartins/mailcannon.git
+  revision: 5983d9c5ff0af4d06f2a7019a106fe0d069f0e76
+  specs:
+    mailcannon (0.0.5)
+      activemodel (>= 3.0.0)
+      json-schema
+      mongoid
+      redis
+      sendgrid_webapi
+      sidekiq
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -11,21 +23,14 @@ GEM
     celluloid (0.15.2)
       timers (~> 1.1.0)
     connection_pool (1.2.0)
-    faraday (0.8.8)
+    faraday (0.8.9)
       multipart-post (~> 1.2.0)
     i18n (0.6.9)
     json (1.8.1)
-    json-schema (2.1.9)
+    json-schema (2.2.1)
     kiqstand (1.1.0)
       mongoid (~> 3.1)
       moped (~> 1.4)
-    mailcannon (0.0.5)
-      activemodel (>= 3.0.0)
-      json-schema
-      mongoid
-      redis
-      sendgrid_webapi
-      sidekiq
     mongoid (3.1.6)
       activemodel (~> 3.2)
       moped (~> 1.4)
@@ -41,7 +46,7 @@ GEM
     sendgrid_webapi (0.0.2)
       faraday (~> 0.8.0)
       json (~> 1.8.0)
-    sidekiq (2.17.2)
+    sidekiq (2.17.3)
       celluloid (>= 0.15.2)
       connection_pool (>= 1.0.0)
       json
@@ -55,4 +60,4 @@ PLATFORMS
 
 DEPENDENCIES
   kiqstand (>= 1.1.0)
-  mailcannon (>= 0.0.5)
+  mailcannon!
