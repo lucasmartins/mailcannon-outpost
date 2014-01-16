@@ -10,7 +10,7 @@ Install
 
 Refer to the main gem for more details: [MailCannon](https://github.com/lucasmartins/mailcannon)
 
-Clone/Fork this repo, modify `env.sh` to meet your own variables and run it:
+[Download](https://github.com/lucasmartins/mailcannon-outpost/archive/master.zip) (or Clone/Fork) this repo, modify `env.sh` to meet your own variables and run it:
 ```bash
   $ git clone git@github.com:lucasmartins/mailcannon-outpost.git
   $ cd mailcannon-outpost
