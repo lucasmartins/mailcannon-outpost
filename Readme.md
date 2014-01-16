@@ -10,7 +10,16 @@ Install
 
 Refer to the main gem for more details: [MailCannon](https://github.com/lucasmartins/mailcannon)
 
-You should be able to clone/fork this repo and run the wrapper like this:
+Clone/Fork this repo, modify `env.sh` to meet your own variables and run it:
+```bash
+  $ git clone git@github.com:lucasmartins/mailcannon-outpost.git
+  $ cd mailcannon-outpost
+  $ . ./env.sample.sh # this will create an env.sh file.
+  $ vim env.sh
+  $ . ./env.sh
+```
+
+You should be able to and run the wrapper like this:
 
 ```bash
   $ be sidekiq -r ./runner.rb --config=config/sidekiq.yml -v

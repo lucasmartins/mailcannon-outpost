@@ -2,3 +2,4 @@ env.sh
 config/mailcannon.yml
 config/mongoid.yml
 config/sidekiq.yml
+config/mailcannon.yml
