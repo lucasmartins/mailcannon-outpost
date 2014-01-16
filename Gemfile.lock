@@ -41,6 +41,7 @@ GEM
     multi_json (1.8.2)
     multipart-post (1.2.0)
     origin (1.1.0)
+    rake (10.1.1)
     redis (3.0.6)
     redis-namespace (1.4.1)
       redis (~> 3.0.4)
@@ -264,4 +265,5 @@ PLATFORMS
 DEPENDENCIES
   kiqstand (>= 1.1.0)
   mailcannon!
+  rake
   rubysl
