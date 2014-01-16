@@ -19,7 +19,7 @@ Refer to the main gem for more details: [MailCannon](https://github.com/lucasmar
   $ . ./env.sh
 ```
 
-You should be able to and run the wrapper like this:
+You should be able to run the wrapper like this:
 
 ```bash
   $ be sidekiq -r ./runner.rb --config=config/sidekiq.yml -v
