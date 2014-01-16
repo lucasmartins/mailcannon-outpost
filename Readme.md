@@ -30,7 +30,7 @@ You can access a console with MailCannon environment loaded like this:
   $ irb -r ./runner.rb
 ```
 
-MailCannon Outpost will use your `MONGOBD_URL`, and you should check `config/mongoid.yml` file.
+MailCannon Outpost will use your `MONGOBD_URL`, take a look at your `config/mongoid.yml` file.
 
 Use
 ===
@@ -43,6 +43,18 @@ envelope = MailCannon::Envelope.create(
   subject: 'Test',
   mail: MailCannon::Mail.new(text: 'you will see this when no HTML reader is available', html: 'this should be an HTML'))
 ```
+
+Caveats
+=======
+
+MongoDB isn't an ACID database, you should be aware of [MongoDB fundamentals](http://docs.mongodb.org/manual/faq/fundamentals/#does-mongodb-support-transactions) (read the docs!) to put any app into production.
+
+So depending on your setup, you may want to use [synced operations](http://mongoid.org/en/mongoid/docs/persistence.html#atomic) to write your Envelopes to the database:
+```ruby
+envelope = MailCannon::Envelope.with(safe: {j: true}).create(...)
+```
+
+Also, you may want to increase the `waiting_time` variable in your `config/mailcannon.yml` file to match your `fsync` cycle.
 
 Contribute
 ==========
