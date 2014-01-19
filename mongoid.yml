@@ -23,10 +23,7 @@ development:
   sessions:
     # Defines the default session. (required)
     default:
-      #uri: <%= ENV['MONGODB_URL'] %>
-      hosts:
-        - localhost:17017
-      database: rdstation_development
+      uri: <%= ENV['MONGODB_URL'] %>
       options:
         safe: true
         consistency: :strong

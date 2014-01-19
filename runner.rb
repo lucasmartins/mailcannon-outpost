@@ -5,8 +5,10 @@ require "kiqstand"
 
 redis_url = ENV['REDIS_URL'] || 'redis://localhost:6379'
 MAILCANNON_ENV = ENV['MAILCANNON_ENV'] || 'development'
+ENV['MONGODB_URL']='mongodb://localhost:17017:rdstation_development'
 Mongoid.load!("config/mongoid.yml", MAILCANNON_ENV)
 puts "Redis Connection: #{redis_url}"
+puts "Mongoid sessions: #{Mongoid.sessions}"
 
 # If your client is single-threaded, we just need a single connection in our Redis connection pool
 Sidekiq.configure_client do |config|
@@ -15,7 +17,6 @@ end
 
 # Sidekiq server is multi-threaded so our Redis connection pool size defaults to concurrency (-c)
 Sidekiq.configure_server do |config|
-  Mongoid::Sessions.default.disconnect
   config.redis = { :namespace => 'mailcannon', :url => redis_url }
   config.server_middleware do |chain|
     chain.add Kiqstand::Middleware
