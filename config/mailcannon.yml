@@ -8,4 +8,4 @@ waiting_time: 0
 
 # Destroy mail content after send was successful, all other Envelope data is left untouched.
 # * this config is useful for saving storage
-auto_destroy: true
+auto_destroy: false
