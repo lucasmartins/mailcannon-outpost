@@ -5,7 +5,6 @@ require "kiqstand"
 
 redis_url = ENV['REDIS_URL'] || 'redis://localhost:6379'
 MAILCANNON_ENV = ENV['MAILCANNON_ENV'] || 'development'
-ENV['MONGODB_URL']='mongodb://localhost:17017:rdstation_development'
 Mongoid.load!("config/mongoid.yml", MAILCANNON_ENV)
 puts "Redis Connection: #{redis_url}"
 puts "Mongoid sessions: #{Mongoid.sessions}"
