@@ -1,0 +1,32 @@
+production:
+  # Configure available database sessions. (required)
+  sessions:
+    # Defines the default session. (required)
+    default:
+      uri: <%= ENV['MONGODB_URL'] %>
+      options:
+        safe: true
+        skip_version_check: true
+      # the database should be the same as your app using the mailcannon gem.
+staging:
+  # Configure available database sessions. (required)
+  sessions:
+    # Defines the default session. (required)
+    default:
+      uri: <%= ENV['MONGODB_URL'] %>
+      options:
+        safe: true
+        skip_version_check: true
+      # the database should be the same as your app using the mailcannon gem.
+development:
+  # Configure available database sessions. (required)
+  sessions:
+    # Defines the default session. (required)
+    default:
+      #uri: <%= ENV['MONGODB_URL'] %>
+      hosts:
+        - localhost:17017
+      database: rdstation_development
+      options:
+        safe: true
+        consistency: :strong

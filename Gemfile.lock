@@ -1,12 +1,13 @@
 GIT
   remote: git://github.com/lucasmartins/mailcannon.git
-  revision: 5983d9c5ff0af4d06f2a7019a106fe0d069f0e76
+  revision: 8b487f6007f3e4ccf98117dbfa0fda0bdeec63c4
   specs:
-    mailcannon (0.0.5)
+    mailcannon (0.0.6)
       activemodel (>= 3.0.0)
       json-schema
       mongoid
       redis
+      rubysl
       sendgrid_webapi
       sidekiq
 
@@ -38,11 +39,11 @@ GEM
       origin (~> 1.0)
       tzinfo (~> 0.3.29)
     moped (1.5.1)
-    multi_json (1.8.2)
+    multi_json (1.8.4)
     multipart-post (1.2.0)
     origin (1.1.0)
     rake (10.1.1)
-    redis (3.0.6)
+    redis (3.0.7)
     redis-namespace (1.4.1)
       redis (~> 3.0.4)
     rubysl (2.0.15)
@@ -203,7 +204,7 @@ GEM
     rubysl-observer (2.0.0)
     rubysl-open-uri (2.0.0)
     rubysl-open3 (2.0.0)
-    rubysl-openssl (2.0.6)
+    rubysl-openssl (2.1.0)
     rubysl-optparse (2.0.1)
       rubysl-shellwords (~> 2.0)
     rubysl-ostruct (2.0.4)
@@ -218,7 +219,7 @@ GEM
     rubysl-readline (2.0.2)
     rubysl-resolv (2.0.0)
     rubysl-rexml (2.0.2)
-    rubysl-rinda (2.0.0)
+    rubysl-rinda (2.0.1)
     rubysl-rss (2.0.0)
     rubysl-scanf (2.0.0)
     rubysl-securerandom (2.0.0)
@@ -247,7 +248,7 @@ GEM
     rubysl-xmlrpc (2.0.0)
     rubysl-yaml (2.0.4)
     rubysl-zlib (2.0.1)
-    sendgrid_webapi (0.0.2)
+    sendgrid_webapi (0.0.3)
       faraday (~> 0.8.0)
       json (~> 1.8.0)
     sidekiq (2.17.3)
