@@ -1,4 +1,0 @@
----
-:concurrency: 25
-development:
-  :concurrency: 1
