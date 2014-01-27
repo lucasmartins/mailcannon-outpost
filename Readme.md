@@ -59,7 +59,7 @@ So depending on your setup, you may want to use [synced operations](http://mongo
 envelope = MailCannon::Envelope.with(safe: {j: true}).create(...)
 ```
 
-Also, you may want to increase the `waiting_time` variable in your `config/mailcannon.yml` file to match your `fsync` cycle.
+Also, depending on your load, you may want to increase the `waiting_time` variable in your `config/mailcannon.yml` file to match your `fsync` cycle.
 
 Contribute
 ==========
