@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/lucasmartins/mailcannon.git
-  revision: 8b487f6007f3e4ccf98117dbfa0fda0bdeec63c4
+  revision: 089cda7f1fad94c5ebe28ad27b20d599c3552555
   specs:
     mailcannon (0.0.6)
       activemodel (>= 3.0.0)
