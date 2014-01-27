@@ -8,7 +8,7 @@ Use this wrapper to deploy your [MailCannon](https://github.com/lucasmartins/mai
 Install
 =======
 
-Refer to the main gem for more details: [MailCannon](https://github.com/lucasmartins/mailcannon)
+Refer to the [main gem for more details](https://github.com/lucasmartins/mailcannon).
 
 [Download](https://github.com/lucasmartins/mailcannon-outpost/archive/master.zip) (or Clone/Fork) this repo, modify `env.sh` to meet your own variables and run it:
 ```bash
