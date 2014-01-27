@@ -8,7 +8,7 @@ Use this wrapper to deploy your [MailCannon](https://github.com/lucasmartins/mai
 Install
 =======
 
-Refer to the main gem for more details: [MailCannon](https://github.com/lucasmartins/mailcannon)
+Refer to the [main gem for more details](https://github.com/lucasmartins/mailcannon).
 
 [Download](https://github.com/lucasmartins/mailcannon-outpost/archive/master.zip) (or Clone/Fork) this repo, modify `env.sh` to meet your own variables and run it:
 ```bash
@@ -59,7 +59,7 @@ So depending on your setup, you may want to use [synced operations](http://mongo
 envelope = MailCannon::Envelope.with(safe: {j: true}).create(...)
 ```
 
-Also, you may want to increase the `waiting_time` variable in your `config/mailcannon.yml` file to match your `fsync` cycle.
+Also, depending on your load, you may want to increase the `waiting_time` variable in your `config/mailcannon.yml` file to match your `fsync` cycle.
 
 Contribute
 ==========
