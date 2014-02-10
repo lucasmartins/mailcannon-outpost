@@ -54,7 +54,7 @@ Caveats
 
 MongoDB isn't an ACID database, you should be aware of [MongoDB fundamentals](http://docs.mongodb.org/manual/faq/fundamentals/#does-mongodb-support-transactions) (read the docs!) to put any app into production.
 
-So depending on your setup, you may want to use [synced operations](http://mongoid.org/en/mongoid/docs/persistence.html#atomic) to write your Envelopes to the database:
+So **depending** on your setup, you **may** want to use [synced operations](http://mongoid.org/en/mongoid/docs/persistence.html#atomic) to write your Envelopes to the database:
 ```ruby
 envelope = MailCannon::Envelope.with(safe: {j: true}).create(...)
 ```
