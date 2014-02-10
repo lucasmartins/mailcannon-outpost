@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/lucasmartins/mailcannon.git
-  revision: 089cda7f1fad94c5ebe28ad27b20d599c3552555
+  revision: 2ca3d97b64879f5ccb9b97863b1b5d495d21860f
   specs:
-    mailcannon (0.0.6)
+    mailcannon (0.0.7)
       activemodel (>= 3.0.0)
       json-schema
       mongoid
@@ -251,7 +251,7 @@ GEM
     sendgrid_webapi (0.0.3)
       faraday (~> 0.8.0)
       json (~> 1.8.0)
-    sidekiq (2.17.3)
+    sidekiq (2.17.4)
       celluloid (>= 0.15.2)
       connection_pool (>= 1.0.0)
       json
