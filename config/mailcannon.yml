@@ -14,4 +14,4 @@ auto_destroy: false
 default_name_placeholder: "*|NOME|*"
 
 # MailCannon builds the 'email' substitution Array for convenience, using the email from Envelope.to: [{email: 'foo', name: 'bar'}]
-default_name_placeholder: "*|EMAIL|*"
+default_email_placeholder: "*|EMAIL|*"
