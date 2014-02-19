@@ -1,4 +1,7 @@
 ---
-:concurrency: 25
 development:
   :concurrency: 1
+staging:
+  :concurrency: 2
+production:
+  :concurrency: 10
