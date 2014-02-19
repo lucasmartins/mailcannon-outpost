@@ -1,6 +1,6 @@
 ---
 production:
-  :concurrency: 4
+  :concurrency: <%=ENV['concurrency']%>
 development:
   :concurrency: 1
 staging:
