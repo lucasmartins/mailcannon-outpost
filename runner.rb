@@ -22,6 +22,14 @@ Sidekiq.configure_server do |config|
   end
 end
 
+HireFire::Resource.configure do |config|
+  config.dyno(:worker) do
+    HireFire::Macro::Sidekiq.queue
+  end
+end
+
+
+
 # Start up sidekiq via
 # ./bin/sidekiq -r ./examples/por.rb
 # and then you can open up an IRB session like so:
