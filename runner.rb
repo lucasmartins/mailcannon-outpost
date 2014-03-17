@@ -2,6 +2,7 @@ require 'bundler'
 Bundler.setup(:default)
 require 'mailcannon'
 require "kiqstand"
+require 'hirefire-resource'
 
 redis_url = ENV['REDIS_URL'] || 'redis://localhost:6379'
 MAILCANNON_ENV = ENV['MAILCANNON_ENV'] || 'development'
@@ -21,6 +22,14 @@ Sidekiq.configure_server do |config|
     chain.add Kiqstand::Middleware
   end
 end
+
+HireFire::Resource.configure do |config|
+  config.dyno(:worker) do
+    HireFire::Macro::Sidekiq.queue
+  end
+end
+
+
 
 # Start up sidekiq via
 # ./bin/sidekiq -r ./examples/por.rb
