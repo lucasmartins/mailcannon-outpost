@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/lucasmartins/mailcannon.git
-  revision: 5a0d77d05e864683c796f97bb06c144ad9e5bae9
+  revision: 24fb7eb986b7f8cb6397328d81da088b3b12ca77
   branch: s10-reduce-envelope
   specs:
     mailcannon (0.0.8)
