@@ -2,6 +2,7 @@ require 'bundler'
 Bundler.setup(:default)
 require 'mailcannon'
 require "kiqstand"
+require 'hirefire-resource'
 
 redis_url = ENV['REDIS_URL'] || 'redis://localhost:6379'
 MAILCANNON_ENV = ENV['MAILCANNON_ENV'] || 'development'
