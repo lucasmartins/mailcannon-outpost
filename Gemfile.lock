@@ -33,6 +33,7 @@ GEM
     faraday (0.8.9)
       multipart-post (~> 1.2.0)
     ffi2-generators (0.1.1)
+    hirefire-resource (0.2.3)
     i18n (0.6.9)
     json (1.8.1)
     json-schema (2.2.2)
@@ -274,6 +275,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  hirefire-resource
   kiqstand (>= 1.1.0)
   mailcannon!
   rake
