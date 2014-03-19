@@ -11,7 +11,7 @@ end
 class HirefireEndpoint
   def call(env)  	 
   	number_of_jobs = Sidekiq::Stats.new.enqueued
-  	data = [{name: "mailcannon", quantity: number_of_jobs}]
+  	data = [{name: "worker", quantity: number_of_jobs}]
     [200, {"Content-Type" => "application/json"}, data.to_json]
   end
 end
