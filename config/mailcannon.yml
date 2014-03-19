@@ -1,21 +1,17 @@
 # This file will hold any hard configurations MailCannon may need. Customizations included.
-# You might want to use <%=ENV['var']%> to read theses value from your environment variables.
 
 # When creating a MailCannon::Envelope the default behavior is to auto-post the Job to send it.
-auto_post: true
+auto_post: <%=ENV['auto_post']%>
 
 # This is will schedule a delay for the Job execution, useful if you want to be able to Cancel the Job.
-waiting_time: 0
-
-# Pretty self explanatory. This is intended to be used by your event consuming service.
-add_envelope_id_to_unique_args: true
+waiting_time: <%=ENV['waiting_time']%>
 
 # Destroy mail content after send was successful, all other Envelope data is left untouched.
 # * this config is useful for saving storage
-auto_destroy: false
+auto_destroy: <%=ENV['auto_destroy']%>
 
 # MailCannon builds the 'name' substitution Array for convenience, using the name from Envelope.to: [{email: 'foo', name: 'bar'}]
-default_name_placeholder: "%name%"
+default_name_placeholder: <%=ENV['default_name_placeholder']%>
 
 # MailCannon builds the 'email' substitution Array for convenience, using the email from Envelope.to: [{email: 'foo', name: 'bar'}]
-default_email_placeholder: "%email%"
+default_email_placeholder: <%=ENV['default_email_placeholder']%>

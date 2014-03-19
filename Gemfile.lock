@@ -10,6 +10,7 @@ GIT
       librato-metrics
       mongoid
       redis
+      rubysl
       sendgrid_webapi
       sidekiq
 
