@@ -16,4 +16,9 @@ class HirefireEndpoint
   end
 end
 
-Rack::Handler::Thin.run HirefireEndpoint.new, :Port => 3000
+
+hirefire_token = ENV['HIREFIRE_TOKEN'] || 'development'
+
+map "/hirefire/#{hirefire_token}/info" do
+	Rack::Handler::Thin.run HirefireEndpoint.new, :Port => 3000
+end
