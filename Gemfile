@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rubysl', platform: :rbx
 gem 'rake'
 gem "kiqstand", '>= 1.1.0'
-gem 'mailcannon', github: 'lucasmartins/mailcannon', branch: 's10-reduce-envelope'
+gem 'mailcannon', github: 'lucasmartins/mailcannon', branch: 'edge'
 gem "thin"
 
 # https://github.com/heroku/heroku-buildpack-ruby/issues/206

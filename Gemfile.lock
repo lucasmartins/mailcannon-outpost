@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/lucasmartins/mailcannon.git
-  revision: 24fb7eb986b7f8cb6397328d81da088b3b12ca77
-  branch: s10-reduce-envelope
+  revision: 9398b278e16f6eff6c1040902076f0227314b7f5
+  branch: edge
   specs:
     mailcannon (0.0.8)
       activemodel (>= 3.0.0)
