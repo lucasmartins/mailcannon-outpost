@@ -6,7 +6,7 @@ ruby "2.0.0"
 gem 'rubysl', platform: :rbx
 gem 'rake'
 gem "kiqstand", '>= 1.1.0'
-gem 'mailcannon', github: 'lucasmartins/mailcannon', branch: 'librato-exo-wrapper'
+gem 'mailcannon', github: 'lucasmartins/mailcannon', branch: 'edge'
 gem 'thin'
 gem 'librato-rack'
 gem 'librato-sidekiq'

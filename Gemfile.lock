@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/lucasmartins/mailcannon.git
-  revision: 47ab7a067569b7561cf8c7ca7067f35f08b00320
-  branch: librato-exo-wrapper
+  revision: 851f96ebbc98ccf00cec129162382f2ce14d89c7
+  branch: edge
   specs:
     mailcannon (0.0.8)
       activemodel (>= 3.0.0)
