@@ -2,12 +2,18 @@ require 'bundler'
 Bundler.setup(:default)
 require 'mailcannon'
 require "kiqstand"
+require 'librato-rack'
+require 'librato-sidekiq'
 
 redis_url = ENV['REDIS_URL'] || 'redis://localhost:6379'
 MAILCANNON_ENV = ENV['MAILCANNON_ENV'] || 'development'
 Mongoid.load!("config/mongoid.yml", MAILCANNON_ENV)
 puts "Redis Connection: #{redis_url}"
 puts "Mongoid sessions: #{Mongoid.sessions}"
+
+Librato::Sidekiq::Middleware.configure do |c|
+  c.enabled = true
+end
 
 # If your client is single-threaded, we just need a single connection in our Redis connection pool
 Sidekiq.configure_client do |config|
