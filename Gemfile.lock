@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/lucasmartins/mailcannon.git
-  revision: 9398b278e16f6eff6c1040902076f0227314b7f5
-  branch: edge
+  revision: c43ff3b54d51c311d15661a24a1ef949a3d9e5b3
+  branch: s11-envelope-bag-statistics
   specs:
     mailcannon (0.0.8)
       activemodel (>= 3.0.0)
