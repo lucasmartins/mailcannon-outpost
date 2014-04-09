@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/lucasmartins/mailcannon.git
+  remote: git://github.com/ResultadosDigitais/mailcannon.git
   revision: 183a08b6b0989b224e607bc03f37aeeae95b7a46
   branch: edge
   specs:
