@@ -1,7 +1,7 @@
 GIT
-  remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 183a08b6b0989b224e607bc03f37aeeae95b7a46
-  branch: edge
+  remote: git://github.com/joaohornburg/mailcannon.git
+  revision: a4d7ac2f6f8d68f111d96ead54aa168c6ad3be47
+  branch: fix-retry-error
   specs:
     mailcannon (0.0.8)
       activemodel (>= 3.0.0)
@@ -21,6 +21,9 @@ GEM
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     aggregate (0.2.2)
+    airbrake (3.1.16)
+      builder
+      multi_json
     builder (3.0.4)
     celluloid (0.15.2)
       timers (~> 1.1.0)
@@ -289,6 +292,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  airbrake
+  i18n
   kiqstand (>= 1.1.0)
   librato-rack
   librato-sidekiq
