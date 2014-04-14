@@ -5,7 +5,7 @@ ruby "2.1.0", :engine => "rbx", :engine_version => "2.2.1"
 gem 'rubysl', platform: :rbx
 gem 'rake'
 gem "kiqstand", '>= 1.1.0'
-gem 'mailcannon', github: 'lucasmartins/mailcannon', branch: 's11-envelope-bag-statistics' 
+gem 'mailcannon', github: 'ResultadosDigitais/mailcannon', branch: 'fix-map-reduce' 
 gem 'thin'
 
 # https://github.com/heroku/heroku-buildpack-ruby/issues/206

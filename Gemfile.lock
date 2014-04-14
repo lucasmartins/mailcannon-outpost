@@ -1,18 +1,16 @@
 GIT
-  remote: git://github.com/lucasmartins/mailcannon.git
-  revision: c43ff3b54d51c311d15661a24a1ef949a3d9e5b3
-  branch: s11-envelope-bag-statistics
+  remote: git://github.com/ResultadosDigitais/mailcannon.git
+  revision: 9a0a261d214d8888cbd57201af4be736edb765a9
+  branch: fix-map-reduce
   specs:
     mailcannon (0.0.8)
       activemodel (>= 3.0.0)
-      airbrake
       json-schema
-      librato-metrics
       mongoid
       redis
       rubysl
       sendgrid_webapi
-      sidekiq
+      sidekiq (= 2.17.7)
 
 GEM
   remote: https://rubygems.org/
@@ -23,10 +21,6 @@ GEM
     activesupport (3.2.17)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
-    aggregate (0.2.2)
-    airbrake (3.1.16)
-      builder
-      multi_json
     builder (3.0.4)
     celluloid (0.15.2)
       timers (~> 1.1.0)
@@ -42,17 +36,13 @@ GEM
     kiqstand (1.1.0)
       mongoid (~> 3.1)
       moped (~> 1.4)
-    librato-metrics (1.3.0)
-      aggregate (~> 0.2.2)
-      faraday (~> 0.7)
-      multi_json
     mongoid (3.1.6)
       activemodel (~> 3.2)
       moped (~> 1.4)
       origin (~> 1.0)
       tzinfo (~> 0.3.29)
     moped (1.5.2)
-    multi_json (1.9.0)
+    multi_json (1.9.2)
     multipart-post (1.2.0)
     origin (1.1.0)
     rack (1.5.2)
