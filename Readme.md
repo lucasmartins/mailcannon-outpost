@@ -49,6 +49,27 @@ envelope = MailCannon::Envelope.create(
   mail: MailCannon::Mail.new(text: 'you will see this when no HTML reader is available', html: 'this should be an HTML'))
 ```
 
+Auto-scaling
+============
+
+MailCannon Outpost has support for [Hirefire](http://hirefireapp.com) (if you don't know it yet I strongly recommend you to check it out), you can also use Outpost's endpoint to implement your own auto-scaling.
+
+The endpoint will try to use - if available - the environment variable `HIREFIRE_TOKEN`, if that's not the case, it will fallback to development mode:
+
+`curl http://my-mailcannon.com/hirefire/my_awesome_hirefire_token/info`
+
+`curl http://localhost:3000/hirefire/development/info`
+
+The 'info' endpoint will return a JSON with the following structure:
+
+```json
+[{"name":"worker", "quantity":0}]
+```
+
+Where **0** is the count of how many jobs are running right now.
+
+In the future, this structure might change to accomodate more types of jobs - so there will be more hashes inside the array, with other names so you can scale it separately.
+
 Caveats
 =======
 
