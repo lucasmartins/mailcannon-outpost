@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 605076a020e417e814a09451cf07263e64859554
-  branch: integrate_edge_into_master_and_bump_version
+  revision: 9526f0bc1b36897ae78582075859231390837c3b
   specs:
     mailcannon (0.1.1)
       activemodel (>= 3.0.0)
@@ -10,7 +9,7 @@ GIT
       redis
       rubysl
       sendgrid_webapi
-      sidekiq
+      sidekiq (= 2.17.7)
 
 GEM
   remote: https://rubygems.org/
