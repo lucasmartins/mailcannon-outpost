@@ -1,13 +1,14 @@
 GIT
-  remote: git://github.com/lucasmartins/mailcannon.git
-  revision: 183a08b6b0989b224e607bc03f37aeeae95b7a46
-  branch: edge
+  remote: git://github.com/ResultadosDigitais/mailcannon.git
+  revision: 605076a020e417e814a09451cf07263e64859554
+  branch: integrate_edge_into_master_and_bump_version
   specs:
-    mailcannon (0.0.8)
+    mailcannon (0.1.1)
       activemodel (>= 3.0.0)
       json-schema
       mongoid
       redis
+      rubysl
       sendgrid_webapi
       sidekiq
 
@@ -292,7 +293,7 @@ DEPENDENCIES
   kiqstand (>= 1.1.0)
   librato-rack
   librato-sidekiq
-  mailcannon!
+  mailcannon (= 0.1.1)!
   pry
   pry-nav
   rake

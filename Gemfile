@@ -1,12 +1,11 @@
 source 'https://rubygems.org'
 
-#ruby "2.1.0", :engine => "rbx", :engine_version => "2.2.1"
-ruby "2.0.0"
+ruby "2.1.0", :engine => "rbx", :engine_version => "2.2.1"
 
 gem 'rubysl', platform: :rbx
 gem 'rake'
 gem "kiqstand", '>= 1.1.0'
-gem 'mailcannon', github: 'lucasmartins/mailcannon', branch: 'edge'
+gem 'mailcannon', '0.1.1', github: 'ResultadosDigitais/mailcannon'
 gem 'thin'
 gem 'librato-rack'
 gem 'librato-sidekiq'
