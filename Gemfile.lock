@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 9a0a261d214d8888cbd57201af4be736edb765a9
+  revision: 6f63fe01cca58a8ab0182122492631ed9a81ee39
   branch: fix-map-reduce
   specs:
-    mailcannon (0.0.8)
+    mailcannon (0.1.1)
       activemodel (>= 3.0.0)
       json-schema
       mongoid
@@ -15,10 +15,10 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (3.2.17)
-      activesupport (= 3.2.17)
+    activemodel (3.2.18)
+      activesupport (= 3.2.18)
       builder (~> 3.0.0)
-    activesupport (3.2.17)
+    activesupport (3.2.18)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     aggregate (0.2.2)
@@ -53,7 +53,7 @@ GEM
       origin (~> 1.0)
       tzinfo (~> 0.3.29)
     moped (1.5.2)
-    multi_json (1.9.2)
+    multi_json (1.10.0)
     multipart-post (1.2.0)
     origin (1.1.0)
     pry (0.9.12.6)
