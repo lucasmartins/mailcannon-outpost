@@ -292,7 +292,7 @@ DEPENDENCIES
   kiqstand (>= 1.1.0)
   librato-rack
   librato-sidekiq
-  mailcannon (>= 0.2.0)!
+  mailcannon (= 0.2.0)!
   pry
   pry-nav
   rake
