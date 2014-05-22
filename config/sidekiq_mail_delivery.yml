@@ -1,0 +1,5 @@
+---
+:queues:
+  - mail_delivery
+  - default
+:concurrency: <%=ENV['concurrency'] || 10 %>

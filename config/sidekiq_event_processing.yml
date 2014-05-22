@@ -1,0 +1,4 @@
+---
+:queues:
+  - event_processing
+:concurrency: <%=ENV['event-processing-concurrency'] || 2 %>

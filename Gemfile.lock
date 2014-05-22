@@ -1,8 +1,9 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 38c5c0fad13c9147b4affb77f358db43c22e6aee
+  revision: e69d3818595f6ef12014822d18901e3e3d2af8da
+  branch: fix-jobs-queues
   specs:
-    mailcannon (0.2.0)
+    mailcannon (0.2.1)
       activemodel (>= 3.0.0)
       json-schema
       mongoid
@@ -292,7 +293,7 @@ DEPENDENCIES
   kiqstand (>= 1.1.0)
   librato-rack
   librato-sidekiq
-  mailcannon (= 0.2.0)!
+  mailcannon (= 0.2.1)!
   pry
   pry-nav
   rake
