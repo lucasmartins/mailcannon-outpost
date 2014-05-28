@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: e69d3818595f6ef12014822d18901e3e3d2af8da
-  branch: fix-jobs-queues
+  revision: a6d08460a0c1ba89c20ccea716a496fc4dd904e3
+  branch: map-reduce-remake
   specs:
     mailcannon (0.2.1)
       activemodel (>= 3.0.0)
