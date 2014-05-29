@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: a6d08460a0c1ba89c20ccea716a496fc4dd904e3
+  revision: 76d14a3bce84a36451f71ebd09bb88a3c8fa61a9
   branch: map-reduce-remake
   specs:
     mailcannon (0.2.1)
@@ -53,7 +53,7 @@ GEM
       origin (~> 1.0)
       tzinfo (~> 0.3.29)
     moped (1.5.2)
-    multi_json (1.10.0)
+    multi_json (1.10.1)
     multipart-post (1.2.0)
     origin (1.1.0)
     pry (0.9.12.6)
