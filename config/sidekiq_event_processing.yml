@@ -1,0 +1,4 @@
+---
+:queues:
+  - event_processing
+:concurrency: <%=ENV['event-processing-concurrency'] || 1 %> # FYI event processing workers were exploding with concurrency

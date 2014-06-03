@@ -9,9 +9,15 @@ Sidekiq.configure_client do |config|
 end
 
 class HirefireEndpoint
-  def call(env)  	 
-  	number_of_jobs = Sidekiq::Stats.new.enqueued
-  	data = [{name: "worker", quantity: number_of_jobs}]
+  def call(env)
+    stats = Sidekiq::Stats.new
+
+  	event_processing_jobs = stats.queues['event_processing'].to_i
+    mail_delivery_jobs = stats.queues['mail_delivery'].to_i + stats.queues['default'].to_i
+
+  	data = [{name: "worker", quantity: mail_delivery_jobs}]
+    data << {name: "event_processing_worker", quantity: event_processing_jobs}
+
     [200, {"Content-Type" => "application/json"}, data.to_json]
   end
 end

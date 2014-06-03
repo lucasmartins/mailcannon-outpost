@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 38c5c0fad13c9147b4affb77f358db43c22e6aee
+  revision: 452298c886432f8accbff7406a8dfb02b25fb304
   specs:
-    mailcannon (0.2.0)
+    mailcannon (0.3.1)
       activemodel (>= 3.0.0)
       json-schema
       mongoid
@@ -52,7 +52,7 @@ GEM
       origin (~> 1.0)
       tzinfo (~> 0.3.29)
     moped (1.5.2)
-    multi_json (1.10.0)
+    multi_json (1.10.1)
     multipart-post (1.2.0)
     origin (1.1.0)
     pry (0.9.12.6)
@@ -292,7 +292,7 @@ DEPENDENCIES
   kiqstand (>= 1.1.0)
   librato-rack
   librato-sidekiq
-  mailcannon (= 0.2.0)!
+  mailcannon (= 0.3.1)!
   pry
   pry-nav
   rake
