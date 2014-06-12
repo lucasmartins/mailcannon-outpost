@@ -1,9 +1,8 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 7dd315d2e04a448988336f14bddd9f49186892ee
-  branch: map-reduce-tuning
+  revision: 111d20be372d50f77fc3e25f7fa4befdd70cfb57
   specs:
-    mailcannon (0.3.2)
+    mailcannon (0.3.3)
       activemodel (>= 3.0.0)
       json-schema
       librato-metrics
@@ -294,7 +293,7 @@ DEPENDENCIES
   kiqstand (>= 1.1.0)
   librato-rack
   librato-sidekiq
-  mailcannon (= 0.3.2)!
+  mailcannon (= 0.3.3)!
   pry
   pry-nav
   rake
