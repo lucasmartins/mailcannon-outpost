@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 6618bf961e93874b19da2bbe33b6cde8adeead4f
-  branch: reduce-jobs-tweak
+  revision: a62754710078f0ae16ca1c1f505cfb855be69ab2
   specs:
     mailcannon (0.3.4)
       activemodel (>= 3.0.0)

@@ -5,7 +5,7 @@ ruby "2.1.0", :engine => "rbx", :engine_version => "2.2.1"
 gem 'rubysl', platform: :rbx
 gem 'rake'
 gem "kiqstand", '>= 1.1.0'
-gem 'mailcannon', '0.3.4', github: 'ResultadosDigitais/mailcannon', branch: "reduce-jobs-tweak"
+gem 'mailcannon', '0.3.4', github: 'ResultadosDigitais/mailcannon'
 gem 'thin'
 gem 'librato-rack'
 gem 'librato-sidekiq'
