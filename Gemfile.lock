@@ -1,12 +1,13 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 111d20be372d50f77fc3e25f7fa4befdd70cfb57
+  revision: 6618bf961e93874b19da2bbe33b6cde8adeead4f
+  branch: reduce-jobs-tweak
   specs:
-    mailcannon (0.3.3)
+    mailcannon (0.3.4)
       activemodel (>= 3.0.0)
       json-schema
       librato-metrics
-      mongoid (>= 3.1.6)
+      mongoid (= 3.1.6)
       redis
       rubysl
       sendgrid_webapi (= 0.0.3)
@@ -293,7 +294,7 @@ DEPENDENCIES
   kiqstand (>= 1.1.0)
   librato-rack
   librato-sidekiq
-  mailcannon (= 0.3.3)!
+  mailcannon (= 0.3.4)!
   pry
   pry-nav
   rake
