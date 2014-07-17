@@ -1,8 +1,9 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: a62754710078f0ae16ca1c1f505cfb855be69ab2
+  revision: 5a25a5ba7a5b5d9890ec67c0842fb38c86c3351a
+  branch: raise-error-when-failed
   specs:
-    mailcannon (0.3.4)
+    mailcannon (0.3.5)
       activemodel (>= 3.0.0)
       json-schema
       librato-metrics
@@ -293,7 +294,7 @@ DEPENDENCIES
   kiqstand (>= 1.1.0)
   librato-rack
   librato-sidekiq
-  mailcannon (= 0.3.4)!
+  mailcannon (= 0.3.5)!
   pry
   pry-nav
   rake
