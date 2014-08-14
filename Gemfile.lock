@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 6dc41a0f99756367710df1415cc4197a60b346ab
+  revision: 72d5fde81a48b5c6f50489eed61646c1f89d2562
+  branch: sidekiq-tweaks
   specs:
     mailcannon (0.3.6)
       activemodel (>= 3.0.0)
@@ -34,7 +35,7 @@ GEM
     ffi2-generators (0.1.1)
     i18n (0.6.9)
     json (1.8.1)
-    json-schema (2.2.2)
+    json-schema (2.2.4)
     kiqstand (1.1.0)
       mongoid (~> 3.1)
       moped (~> 1.4)
