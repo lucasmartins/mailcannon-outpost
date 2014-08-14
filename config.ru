@@ -13,7 +13,7 @@ class HirefireEndpoint
     stats = Sidekiq::Stats.new
 
   	event_processing_jobs = stats.queues['event_processing'].to_i
-    mail_delivery_jobs = stats.queues['mail_delivery'].to_i + stats.queues['default'].to_i
+    mail_delivery_jobs = stats.queues['secondary_mail_delivery'].to_i + stats.queues['mail_delivery'].to_i + stats.queues['default'].to_i
 
   	data = [{name: "worker", quantity: mail_delivery_jobs}]
     data << {name: "event_processing_worker", quantity: event_processing_jobs}
