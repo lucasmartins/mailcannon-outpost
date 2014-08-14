@@ -1,9 +1,8 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 72d5fde81a48b5c6f50489eed61646c1f89d2562
-  branch: sidekiq-tweaks
+  revision: c41a20e6fbc380b9a44c2607edeb8e10bd187877
   specs:
-    mailcannon (0.3.6)
+    mailcannon (0.3.7)
       activemodel (>= 3.0.0)
       json-schema
       librato-metrics
@@ -294,7 +293,7 @@ DEPENDENCIES
   kiqstand (>= 1.1.0)
   librato-rack
   librato-sidekiq
-  mailcannon (= 0.3.6)!
+  mailcannon (= 0.3.7)!
   pry
   pry-nav
   rake
