@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 31e6ed1eac8bedaf16fb3ab75a17f27465a9380b
+  revision: cd86e2f1cbff715bacaf9b2cb8a79628c951dd19
+  branch: remove-substitutions-stuff
   specs:
     mailcannon (0.3.9)
       activemodel (>= 3.0.0)
