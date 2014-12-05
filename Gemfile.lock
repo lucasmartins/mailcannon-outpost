@@ -1,9 +1,8 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: ce62238d67fa64007da8c6dca67709a6859cc182
-  branch: revert-14-soft_and_hard_bounces_mr
+  revision: 844ba29eaeaf0435b4b2de2d48d1d1d9429ccae7
   specs:
-    mailcannon (0.3.9)
+    mailcannon (0.3.10)
       activemodel (>= 3.0.0)
       json-schema
       librato-metrics
@@ -293,7 +292,7 @@ DEPENDENCIES
   kiqstand (>= 1.1.0)
   librato-rack
   librato-sidekiq
-  mailcannon (= 0.3.9)!
+  mailcannon (= 0.3.10)!
   pry
   pry-nav
   rake
