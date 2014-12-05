@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 92d81defa0d5d217d1ac7317e7e1287ea3cd1234
-  branch: remove-substitutions-stuff
+  revision: ce62238d67fa64007da8c6dca67709a6859cc182
+  branch: revert-14-soft_and_hard_bounces_mr
   specs:
     mailcannon (0.3.9)
       activemodel (>= 3.0.0)
