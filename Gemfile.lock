@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 844ba29eaeaf0435b4b2de2d48d1d1d9429ccae7
+  revision: 6e4e775f7f0ba880ec77251163f1fe3741b320af
   specs:
-    mailcannon (0.3.10)
+    mailcannon (0.3.11)
       activemodel (>= 3.0.0)
       json-schema
       librato-metrics
@@ -20,6 +20,7 @@ GEM
     activesupport (3.2.18)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    addressable (2.3.6)
     aggregate (0.2.2)
     builder (3.0.4)
     celluloid (0.15.2)
@@ -33,7 +34,8 @@ GEM
     ffi2-generators (0.1.1)
     i18n (0.6.9)
     json (1.8.1)
-    json-schema (2.4.1)
+    json-schema (2.5.0)
+      addressable (~> 2.3)
     kiqstand (1.1.0)
       mongoid (~> 3.1)
       moped (~> 1.4)
@@ -292,7 +294,7 @@ DEPENDENCIES
   kiqstand (>= 1.1.0)
   librato-rack
   librato-sidekiq
-  mailcannon (= 0.3.10)!
+  mailcannon (= 0.3.11)!
   pry
   pry-nav
   rake
