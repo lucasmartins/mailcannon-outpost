@@ -1,9 +1,8 @@
 GIT
   remote: git://github.com/ResultadosDigitais/mailcannon.git
-  revision: 5851495379f4228a7f225c8569d9d635c5819f84
-  branch: remove-deep-merge
+  revision: e1c2ee8380a9366dbda7715a7196ccc44e26ca71
   specs:
-    mailcannon (0.3.7)
+    mailcannon (0.3.12)
       activemodel (>= 3.0.0)
       json-schema
       librato-metrics
@@ -294,7 +293,7 @@ DEPENDENCIES
   kiqstand (>= 1.1.0)
   librato-rack
   librato-sidekiq
-  mailcannon (= 0.3.7)!
+  mailcannon (= 0.3.12)!
   pry
   pry-nav
   rake
