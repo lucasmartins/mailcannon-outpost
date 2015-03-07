@@ -7,6 +7,7 @@ production:
       options:
         safe: true
         skip_version_check: true
+        consistency: :strong
       # the database should be the same as your app using the mailcannon gem.
 staging:
   # Configure available database sessions. (required)
