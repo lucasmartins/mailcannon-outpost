@@ -4,6 +4,7 @@ require 'mailcannon'
 require "kiqstand"
 require 'librato-rack'
 require 'librato-sidekiq'
+require 'newrelic_moped'
 require 'newrelic_rpm'
 
 redis_url = ENV['REDIS_URL'] || 'redis://localhost:6379'
