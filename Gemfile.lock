@@ -55,6 +55,9 @@ GEM
     moped (1.5.2)
     multi_json (1.10.1)
     multipart-post (1.2.0)
+    newrelic_moped (1.0.0)
+      moped
+      newrelic_rpm (~> 3.11)
     newrelic_rpm (3.11.1.284)
     origin (1.1.0)
     pry (0.9.12.6)
@@ -93,6 +96,7 @@ DEPENDENCIES
   librato-rack
   librato-sidekiq
   mailcannon (= 0.3.12)!
+  newrelic_moped
   newrelic_rpm
   pry
   pry-nav
