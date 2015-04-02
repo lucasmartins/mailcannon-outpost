@@ -221,4 +221,4 @@ production:
 staging:
   <<: *default_settings
   monitor_mode: true
-  app_name: MailCannon (Staging)
+  app_name: MailCannon
