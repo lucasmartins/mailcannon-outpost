@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
-ruby "2.2.0"
+ruby "2.2.2"
 
 gem 'rake'
-gem "kiqstand", '>= 1.1.0'
-gem 'mailcannon', '0.3.12', github: 'ResultadosDigitais/mailcannon'
+gem 'mailcannon', '0.3.12', github: 'ResultadosDigitais/mailcannon', branch: 'headers'
 gem 'thin'
 gem 'librato-rack'
 gem 'librato-sidekiq'
