@@ -5,9 +5,8 @@ production:
     default:
       uri: <%= ENV['MONGODB_URL'] %>
       options:
-        safe: true
-        skip_version_check: true
-      # the database should be the same as your app using the mailcannon gem.
+        write:
+          w: 1
 staging:
   # Configure available database sessions. (required)
   sessions:
@@ -15,9 +14,8 @@ staging:
     default:
       uri: <%= ENV['MONGODB_URL'] %>
       options:
-        safe: true
-        skip_version_check: true
-      # the database should be the same as your app using the mailcannon gem.
+        write:
+          w: 1
 development:
   # Configure available database sessions. (required)
   sessions:
@@ -25,5 +23,5 @@ development:
     default:
       uri: <%= ENV['MONGODB_URL'] %>
       options:
-        safe: true
-        consistency: :strong
+        write:
+          w: 1

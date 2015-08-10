@@ -1,9 +1,9 @@
 require 'bundler'
 Bundler.setup(:default)
 require 'mailcannon'
-require "kiqstand"
 require 'librato-rack'
 require 'librato-sidekiq'
+require 'newrelic_moped'
 require 'newrelic_rpm'
 
 redis_url = ENV['REDIS_URL'] || 'redis://localhost:6379'
@@ -24,9 +24,6 @@ end
 # Sidekiq server is multi-threaded so our Redis connection pool size defaults to concurrency (-c)
 Sidekiq.configure_server do |config|
   config.redis = { :namespace => 'mailcannon', :url => redis_url }
-  config.server_middleware do |chain|
-    chain.add Kiqstand::Middleware
-  end
 end
 
 
