@@ -76,6 +76,8 @@ GEM
     rack (1.5.2)
     rake (10.3.1)
     redis (3.2.2)
+    redis-namespace (1.5.2)
+      redis (~> 3.0, >= 3.0.4)
     sendgrid_webapi (0.0.6)
       faraday (~> 0.9.0)
       faraday_middleware (~> 0.9.0)
@@ -105,6 +107,7 @@ DEPENDENCIES
   pry
   pry-nav
   rake
+  redis-namespace
   sidekiq (~> 4.1.1)
   thin
 
