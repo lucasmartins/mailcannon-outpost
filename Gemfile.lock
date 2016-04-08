@@ -1,9 +1,8 @@
 GIT
   remote: https://github.com/ResultadosDigitais/mailcannon
-  revision: 354fedf036e056c2c4fd2deb9bc6a1e9ba7868fc
-  branch: update_sidekiq_version
+  revision: cae082110013aa3210b524ca4a5dcf8bd57ff045
   specs:
-    mailcannon (0.3.13)
+    mailcannon (0.3.14)
       activemodel (>= 3.0.0)
       json-schema
       librato-metrics
@@ -123,7 +122,7 @@ PLATFORMS
 DEPENDENCIES
   librato-rack
   librato-sidekiq
-  mailcannon (= 0.3.13)!
+  mailcannon (= 0.3.14)!
   newrelic_moped
   newrelic_rpm
   pry
