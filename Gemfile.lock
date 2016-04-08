@@ -27,24 +27,8 @@ GEM
     aggregate (0.2.2)
     bson (3.2.6)
     builder (3.2.2)
-    celluloid (0.17.3)
-      celluloid-essentials
-      celluloid-extras
-      celluloid-fsm
-      celluloid-pool
-      celluloid-supervision
-      timers (>= 4.1.1)
-    celluloid-essentials (0.20.5)
-      timers (>= 4.1.1)
-    celluloid-extras (0.20.5)
-      timers (>= 4.1.1)
-    celluloid-fsm (0.20.5)
-      timers (>= 4.1.1)
-    celluloid-pool (0.20.5)
-      timers (>= 4.1.1)
-    celluloid-supervision (0.20.5)
-      timers (>= 4.1.1)
     coderay (1.1.0)
+    concurrent-ruby (1.0.1)
     connection_pool (2.2.0)
     daemons (1.1.9)
     eventmachine (1.0.7)
@@ -52,7 +36,6 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.2)
       faraday (>= 0.7.4, < 0.10)
-    hitimes (1.2.3)
     i18n (0.7.0)
     json (1.8.3)
     json-schema (2.6.1)
@@ -93,26 +76,20 @@ GEM
     rack (1.5.2)
     rake (10.3.1)
     redis (3.2.2)
-    redis-namespace (1.5.2)
-      redis (~> 3.0, >= 3.0.4)
     sendgrid_webapi (0.0.6)
       faraday (~> 0.9.0)
       faraday_middleware (~> 0.9.0)
       json (~> 1.8.0)
-    sidekiq (3.5.4)
-      celluloid (~> 0.17.2)
+    sidekiq (4.1.1)
+      concurrent-ruby (~> 1.0)
       connection_pool (~> 2.2, >= 2.2.0)
-      json (~> 1.0)
       redis (~> 3.2, >= 3.2.1)
-      redis-namespace (~> 1.5, >= 1.5.2)
     slop (3.5.0)
     thin (1.6.2)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
       rack (>= 1.0.0)
     thread_safe (0.3.5)
-    timers (4.1.1)
-      hitimes
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
 
@@ -128,7 +105,7 @@ DEPENDENCIES
   pry
   pry-nav
   rake
-  sidekiq (= 3.5.4)
+  sidekiq (~> 4.1.1)
   thin
 
 BUNDLED WITH
