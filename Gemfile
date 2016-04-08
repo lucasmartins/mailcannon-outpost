@@ -1,15 +1,16 @@
 source 'https://rubygems.org'
 
-#ruby "2.1.0", :engine => "rbx", :engine_version => "2.2.1"
-ruby "2.0.0"
+ruby "2.2.2"
 
-gem 'rubysl', platform: :rbx
 gem 'rake'
-gem "kiqstand", '>= 1.1.0'
-gem 'mailcannon', github: 'lucasmartins/mailcannon', branch: 'edge'
+gem 'redis-namespace'
+gem 'mailcannon', '0.3.14', git: "https://github.com/ResultadosDigitais/mailcannon"
 gem 'thin'
 gem 'librato-rack'
 gem 'librato-sidekiq'
+gem 'newrelic_rpm'
+gem 'newrelic_moped'
+gem 'sidekiq', '~> 4.1.1'
 
 # https://github.com/heroku/heroku-buildpack-ruby/issues/206
 # If you have trouble with Heroku at deploy time, try this temporary fix:

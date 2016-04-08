@@ -11,10 +11,13 @@ waiting_time: <%=ENV['waiting_time']%>
 auto_destroy: <%=ENV['auto_destroy']%>
 
 # MailCannon builds the 'name' substitution Array for convenience, using the name from Envelope.to: [{email: 'foo', name: 'bar'}]
-default_name_placeholder: <%=ENV['default_name_placeholder']%>
+default_name_placeholder: '<%=ENV['default_name_placeholder']%>'
 
 # MailCannon builds the 'email' substitution Array for convenience, using the email from Envelope.to: [{email: 'foo', name: 'bar'}]
-default_email_placeholder: <%=ENV['default_email_placeholder']%>
+default_email_placeholder: '<%=ENV['default_email_placeholder']%>'
 
 # Pretty self explanatory. This is intended to be used by your event consuming service.
 add_envelope_id_to_unique_args: <%=ENV['add_envelope_id_to_unique_args']%>
+
+# Pretty self explanatory. This is intended to be used by your event consuming service.
+add_envelope_bag_id_to_unique_args: <%=ENV['add_envelope_bag_id_to_unique_args']%>
