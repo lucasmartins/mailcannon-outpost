@@ -1,12 +1,13 @@
 GIT
   remote: https://github.com/ResultadosDigitais/mailcannon
-  revision: cae082110013aa3210b524ca4a5dcf8bd57ff045
+  revision: 423e03d1c86174d9e17935af93d3a57300d1e740
+  branch: pope-updated-mongoid
   specs:
     mailcannon (0.3.14)
       activemodel (>= 3.0.0)
       json-schema
       librato-metrics
-      mongoid (~> 4.0.2)
+      mongoid (~> 5.1.0)
       redis
       sendgrid_webapi (= 0.0.6)
       sidekiq
@@ -14,16 +15,16 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (4.2.6)
-      activesupport (= 4.2.6)
+    activemodel (4.2.7.1)
+      activesupport (= 4.2.7.1)
       builder (~> 3.1)
-    activesupport (4.2.6)
+    activesupport (4.2.7.1)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.3.8)
+    addressable (2.4.0)
     aggregate (0.2.2)
     bson (3.2.6)
     builder (3.2.2)
@@ -38,8 +39,8 @@ GEM
       faraday (>= 0.7.4, < 0.10)
     i18n (0.7.0)
     json (1.8.3)
-    json-schema (2.6.1)
-      addressable (~> 2.3.8)
+    json-schema (2.7.0)
+      addressable (>= 2.4)
     librato-metrics (1.6.1)
       aggregate (~> 0.2.2)
       faraday (~> 0.7)
@@ -49,11 +50,13 @@ GEM
     librato-sidekiq (0.1.2)
       sidekiq
     method_source (0.8.2)
-    minitest (5.8.4)
-    mongoid (4.0.2)
+    minitest (5.9.1)
+    mongo (2.1.2)
+      bson (~> 3.0)
+    mongoid (5.1.4)
       activemodel (~> 4.0)
-      moped (~> 2.0.0)
-      origin (~> 2.1)
+      mongo (~> 2.1)
+      origin (~> 2.2)
       tzinfo (>= 0.3.37)
     moped (2.0.7)
       bson (~> 3.0)

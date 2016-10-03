@@ -4,7 +4,7 @@ ruby "2.2.2"
 
 gem 'rake'
 gem 'redis-namespace'
-gem 'mailcannon', '0.3.14', git: "https://github.com/ResultadosDigitais/mailcannon"
+gem 'mailcannon', '0.3.14', git: "https://github.com/ResultadosDigitais/mailcannon", branch: "pope-updated-mongoid"
 gem 'thin'
 gem 'librato-rack'
 gem 'librato-sidekiq'
