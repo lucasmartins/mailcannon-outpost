@@ -10,7 +10,7 @@ redis_url = ENV['REDIS_URL'] || 'redis://localhost:6379'
 MAILCANNON_ENV = ENV['MAILCANNON_ENV'] || 'development'
 Mongoid.load!("config/mongoid.yml", MAILCANNON_ENV)
 puts "Redis Connection: #{redis_url}"
-puts "Mongoid sessions: #{Mongoid.sessions}"
+puts "Mongoid clients: #{Mongoid.clients}"
 
 Librato::Sidekiq::Middleware.configure do |c|
   c.enabled = true
