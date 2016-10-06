@@ -1,12 +1,12 @@
 GIT
   remote: https://github.com/ResultadosDigitais/mailcannon
-  revision: cae082110013aa3210b524ca4a5dcf8bd57ff045
+  revision: ce946d33fa30dbe0d83837aaf596680fb14ec754
   specs:
-    mailcannon (0.3.14)
+    mailcannon (0.4.1)
       activemodel (>= 3.0.0)
       json-schema
       librato-metrics
-      mongoid (~> 4.0.2)
+      mongoid (~> 5.1.0)
       redis
       sendgrid_webapi (= 0.0.6)
       sidekiq
@@ -14,32 +14,32 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (4.2.6)
-      activesupport (= 4.2.6)
+    activemodel (4.2.7.1)
+      activesupport (= 4.2.7.1)
       builder (~> 3.1)
-    activesupport (4.2.6)
+    activesupport (4.2.7.1)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.3.8)
+    addressable (2.4.0)
     aggregate (0.2.2)
-    bson (3.2.6)
+    bson (4.1.1)
     builder (3.2.2)
     coderay (1.1.0)
     concurrent-ruby (1.0.1)
     connection_pool (2.2.0)
-    daemons (1.1.9)
-    eventmachine (1.0.7)
+    daemons (1.2.3)
+    eventmachine (1.2.0.1)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.2)
       faraday (>= 0.7.4, < 0.10)
     i18n (0.7.0)
     json (1.8.3)
-    json-schema (2.6.1)
-      addressable (~> 2.3.8)
+    json-schema (2.7.0)
+      addressable (>= 2.4)
     librato-metrics (1.6.1)
       aggregate (~> 0.2.2)
       faraday (~> 0.7)
@@ -49,23 +49,17 @@ GEM
     librato-sidekiq (0.1.2)
       sidekiq
     method_source (0.8.2)
-    minitest (5.8.4)
-    mongoid (4.0.2)
+    minitest (5.9.1)
+    mongo (2.3.0)
+      bson (~> 4.1)
+    mongoid (5.1.4)
       activemodel (~> 4.0)
-      moped (~> 2.0.0)
-      origin (~> 2.1)
+      mongo (~> 2.1)
+      origin (~> 2.2)
       tzinfo (>= 0.3.37)
-    moped (2.0.7)
-      bson (~> 3.0)
-      connection_pool (~> 2.0)
-      optionable (~> 0.2.0)
     multi_json (1.11.2)
     multipart-post (2.0.0)
-    newrelic_moped (1.0.0)
-      moped
-      newrelic_rpm (~> 3.11)
     newrelic_rpm (3.11.1.284)
-    optionable (0.2.0)
     origin (2.2.0)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -73,7 +67,7 @@ GEM
       slop (~> 3.4)
     pry-nav (0.2.3)
       pry (~> 0.9.10)
-    rack (1.5.2)
+    rack (1.6.4)
     rake (10.3.1)
     redis (3.2.2)
     redis-namespace (1.5.2)
@@ -87,10 +81,10 @@ GEM
       connection_pool (~> 2.2, >= 2.2.0)
       redis (~> 3.2, >= 3.2.1)
     slop (3.5.0)
-    thin (1.6.2)
-      daemons (>= 1.0.9)
-      eventmachine (>= 1.0.0)
-      rack (>= 1.0.0)
+    thin (1.7.0)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -101,8 +95,7 @@ PLATFORMS
 DEPENDENCIES
   librato-rack
   librato-sidekiq
-  mailcannon (= 0.3.14)!
-  newrelic_moped
+  mailcannon (= 0.4.1)!
   newrelic_rpm
   pry
   pry-nav
@@ -110,6 +103,7 @@ DEPENDENCIES
   redis-namespace
   sidekiq (~> 4.1.1)
   thin
+
 
 BUNDLED WITH
    1.11.2

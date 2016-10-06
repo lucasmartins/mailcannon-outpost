@@ -1,6 +1,6 @@
 production:
-  # Configure available database sessions. (required)
-  sessions:
+  # Configure available database clients. (required)
+  clients:
     # Defines the default session. (required)
     default:
       uri: <%= ENV['MONGODB_URL'] %>
@@ -8,8 +8,8 @@ production:
         write:
           w: 1
 staging:
-  # Configure available database sessions. (required)
-  sessions:
+  # Configure available database clients. (required)
+  clients:
     # Defines the default session. (required)
     default:
       uri: <%= ENV['MONGODB_URL'] %>
@@ -17,8 +17,8 @@ staging:
         write:
           w: 1
 development:
-  # Configure available database sessions. (required)
-  sessions:
+  # Configure available database clients. (required)
+  clients:
     # Defines the default session. (required)
     default:
       uri: <%= ENV['MONGODB_URL'] %>
