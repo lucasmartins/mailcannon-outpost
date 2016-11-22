@@ -4,7 +4,7 @@ ruby "2.2.2"
 
 gem 'rake'
 gem 'redis-namespace'
-gem 'mailcannon', '0.4.1', git: "https://github.com/ResultadosDigitais/mailcannon"
+gem 'mailcannon', '0.4.2', git: "https://github.com/ResultadosDigitais/mailcannon"
 gem 'librato-rack'
 gem 'librato-sidekiq'
 gem 'newrelic_rpm'
